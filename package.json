@@ -1,0 +1,14 @@
+{
+  "name": "house-menu",
+  "version": "1.0.0",
+  "description": "This will be an online site to display the house menu",
+  "scripts": {
+    "start": "http-server app -a localhost -p 8080 -c-1"
+  },
+  "author": "Josh Dulberger",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.9.0"
+  }
+}
