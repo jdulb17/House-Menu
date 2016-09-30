@@ -22,7 +22,7 @@ var menu = {
     }
     var arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-    while(day <= 6){
+    while(day <= 6) {
       menu.buildDay(arr[day]);
       day++
     }
@@ -33,6 +33,5 @@ var menu = {
     day.day = currday;
     console.log(day);
   }
-
-}
+},
 menu.init();
