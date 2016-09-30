@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mainModule">
   <head>
     <meta charset="utf-8">
     <title>House Menu</title>
@@ -15,7 +15,16 @@
       </div>
 
 </div>
+
+  <div ui-view></div>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
+
+
+    <script src="mainModule.js"></script>
+
   </body>
 </html>
