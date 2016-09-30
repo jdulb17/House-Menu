@@ -33,5 +33,5 @@ var menu = {
     day.day = currday;
     console.log(day);
   }
-},
+}
 menu.init();
