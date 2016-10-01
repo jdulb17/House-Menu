@@ -11,7 +11,6 @@
 
       vm.submit = submit;
       vm.oneDay = new formFactory.Workday();
-      vm.getDay = formFactory.getDay();
 
 
       function submit(){

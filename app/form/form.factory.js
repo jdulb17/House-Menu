@@ -10,7 +10,6 @@
 
       var factory = {
         Workday: Workday,
-        getDay: getDay,
 
       }
       return factory;
