@@ -5,34 +5,22 @@
     .module('formModule')
     .controller('FormController', FormController);
 
-    FormController.$inject = [];
-    function FormController() {
+    FormController.$inject = ['formFactory'];
+    function FormController(formFactory) {
       var vm = this;
 
-      vm.Workday = Workday;
-      vm.getDay = getDay()
+      vm.submit = submit;
+      vm.oneDay = new formFactory.Workday();
+      vm.getDay = formFactory.getDay();
 
 
-
-      function Workday() {
-        day = '';
-        lunch = '';
-        dinner = '';
+      function submit(){
+        var arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+        console.log(vm.oneDay);
       }
 
-      function getDay() {
-          var date = new Date();
-          var day = date.getDay() - 1;
-          if (day == -1) {
-              day = 6;
-          }
-          var arr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-          while (day <= 6) {
-              console.log(arr[day]);
-              day++
-          }
-      }
+
     }
 
 })();

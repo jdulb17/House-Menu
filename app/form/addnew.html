@@ -1,45 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Add new</title>
-  </head>
-  <body>
+<form ng-submit="vm.submit()">
 
-    <form>
+  <h3>Monday</h3> <!-- Bind data to this -->
+  Lunch: <input type="text" ng-model="vm.oneDay.lunch">
+  Dinner: <input type="text" ng-model="vm.oneDay.dinner">
 
-      <h3>Monday</h3>
-      Lunch: <input type="text">
-      Dinner: <input type="text">
+  <button type="submit" name="button">Submit</button>
 
-      <h3>Tuesday</h3>
-      Lunch: <input type="text">
-      Dinner: <input type="text">
-
-      <h3>Wednesday</h3>
-      Lunch: <input type="text">
-      Dinner: <input type="text">
-
-      <h3>Thursday</h3>
-      Lunch: <input type="text">
-      Dinner: <input type="text">
-
-      <h3>Friday</h3>
-      Lunch: <input type="text">
-      Dinner: <input type="text">
-
-      <h3>Saturday</h3>
-      Lunch: <input type="text">
-      Dinner: <input type="text">
-
-      <h3>Sunday</h3>
-      Lunch: <input type="text">
-      Dinner: <input type="text">
-
-
-
-    </form>
-
-
-  </body>
-</html>
+</form>
